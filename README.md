@@ -1,4 +1,4 @@
-# hw1-app
+# HW1 App
 Software Engineering (CEG 4110) HW1
 
 ### Overview
