@@ -1,11 +1,15 @@
 # hw1-app
 Software Engineering (CEG 4110) HW1
 
+### Overview
+
 This is the source code for an Android app developed in Android Studio. This application allows you to toggle between two parts:
 
 Part one allows you to edit the content of text and randomly assign the text a new color by the click of the "Change Color" button. This new random color is then displayed in its RGB values and HTML color code below the button.
 
-Part two is a paint application that allows you to draw on your screen with the touch of your finger. You are able to change the color of your paint by selecting the new desired RGB values at the top right of the screen. Once completed with your masterpiece, you are able to save your work into your gallary or clear your work to start with a blank screen again.
+Part two is a paint application that allows you to draw on your screen with the touch of your finger. You are able to change the color of your paint by selecting the new desired RGB values at the top right of the screen. Once completed with your masterpiece, you are able to save your work into your gallary (make sure you give the app access to gallery under settings) or clear your work to start with a blank screen again.
+
+### Deployment
 
 To run this app, download the project zip folder and extract the contents on to your computer. Launch Android Studio (or download it at this link if you do not have it installed: https://developer.android.com/studio/) and click to open an existing project within Android Studio as shown below. 
 
@@ -19,4 +23,6 @@ Android Studio should then load the project in. Once it has finished indexing, y
 
 ![2018-09-14 5](https://user-images.githubusercontent.com/22596783/45561112-f1c6e280-b814-11e8-9ad0-9fa1650206e5.png)
 
-After Android Studio has finished building, the HW1 application will download and launch on your phone (or emulator). The app will still be available on your phone under applications as "HW1" even after stopping android studio and/or unplugging your device.
+After Android Studio has finished building, the HW1 application will download and launch on your phone (or emulator). The app will still be available on your phone under applications as "HW1" even after stopping android studio and/or unplugging your device. Make sure to give the app access to gallery under settings.
+
+### Software Design
