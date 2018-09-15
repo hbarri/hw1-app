@@ -26,3 +26,9 @@ Android Studio should then load the project in. Once it has finished indexing, y
 After Android Studio has finished building, the HW1 application will download and launch on your phone (or emulator). The app will still be available on your phone under applications as "HW1" even after stopping android studio and/or unplugging your device. Make sure to give the app access to gallery under settings.
 
 ### Software Design
+
+The basic design of the software was to build a main screen upon launch. This main screen gives you the option to either run part 1 or part 2. Clicking these options changes the screen displayed to the part picked. Each screen is built and formatted with XML where each feature (button, text, touch, etc.) is attached to on action commands and gets run when click/touched.
+
+The design for part 1 is built through a simple EditText XML tag that allows modification by the user. Then the "Change Color" button calls on an action to grab the EditText tag to change the color to a random value.
+
+The design for part 2 
