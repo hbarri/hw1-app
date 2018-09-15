@@ -31,4 +31,4 @@ The basic design of the software was to build a main screen upon launch. This ma
 
 The design for part 1 is built through a simple EditText XML tag that allows modification by the user. Then the "Change Color" button calls on an action to grab the EditText tag to change the color to a random value.
 
-The design for part 2 
+The design for part 2 is built as a PaintView class extending view. This allows the class to have the basic functionality of touch movements and actions. The paint and path objects are also used to keep track of paths created through touch with the specified paint attributes. These are both created as ArrayLists to implement the changing of color functionality. The changing of color is implemented through RGB values given by the user. The saving of the canvas was implemented through the retrieval of the drawing cache and then compressed and saved to the camera folder.
