@@ -11,6 +11,10 @@ Part two is a paint application that allows you to draw on your screen with the 
 
 ### Deployment
 
+You can either launch this application on your phone through the source code or the APK.
+
+## Source Code:
+
 To run this app, download the project zip folder and extract the contents on to your computer. Launch Android Studio (or download it at this link if you do not have it installed: https://developer.android.com/studio/) and click to open an existing project within Android Studio as shown below. 
 
 ![2018-09-14 2](https://user-images.githubusercontent.com/22596783/45560708-e626ec00-b813-11e8-8e9c-81cb24b5c643.png)
@@ -24,6 +28,14 @@ Android Studio should then load the project in. Once it has finished indexing, y
 ![2018-09-14 5](https://user-images.githubusercontent.com/22596783/45561112-f1c6e280-b814-11e8-9ad0-9fa1650206e5.png)
 
 After Android Studio has finished building, the HW1 application will download and launch on your phone (or emulator). The app will still be available on your phone under applications as "HW1" even after stopping android studio and/or unplugging your device. Make sure to give the app access to gallery under settings.
+
+## APK:
+
+To run this app, download the project zip folder and extract the contents on to your computer. Plug in your Android mobile device to your computer and connect as media device if you get prompted. Then open up your folder to view your Android device's files under "My Computer" or "This PC". Once you have your Android device's files open, copy the APK from the bin folder in the extracted "hw1-app-master" project to the root of your Android device's files as shown below.
+
+![image](https://user-images.githubusercontent.com/22596783/45722495-ab59e680-bb7a-11e8-909d-72ee0031e3e2.png)
+
+Now, switch to your Android device and open the application "My Files". Locate your APK, click on your APK, and click "Install". Once it has finished installing, click "Open" to launch the application.
 
 ### Software Design
 
