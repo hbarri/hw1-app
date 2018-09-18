@@ -11,9 +11,9 @@ Part two is a paint application that allows you to draw on your screen with the 
 
 ### Deployment
 
-You can either launch this application on your phone through the source code or the APK.
+You can either launch this application through the source code or the APK.
 
-## Source Code:
+#### Source Code Method:
 
 To run this app, download the project zip folder and extract the contents on to your computer. Launch Android Studio (or download it at this link if you do not have it installed: https://developer.android.com/studio/) and click to open an existing project within Android Studio as shown below. 
 
@@ -29,7 +29,7 @@ Android Studio should then load the project in. Once it has finished indexing, y
 
 After Android Studio has finished building, the HW1 application will download and launch on your phone (or emulator). The app will still be available on your phone under applications as "HW1" even after stopping android studio and/or unplugging your device. Make sure to give the app access to gallery under settings.
 
-## APK:
+#### APK Method:
 
 To run this app, download the project zip folder and extract the contents on to your computer. Plug in your Android mobile device to your computer and connect as media device if you get prompted. Then open up your folder to view your Android device's files under "My Computer" or "This PC". Once you have your Android device's files open, copy the APK from the bin folder in the extracted "hw1-app-master" project to the root of your Android device's files as shown below.
 
@@ -39,8 +39,8 @@ Now, switch to your Android device and open the application "My Files". Locate y
 
 ### Software Design
 
-The basic design of the software was to build a main screen upon launch. This main screen gives you the option to either run part 1 or part 2. Clicking these options changes the screen displayed to the part picked. Each screen is built and formatted with XML where each feature (button, text, touch, etc.) is attached to on action commands and gets run when click/touched.
+The basic design of the software was to build a main screen upon launch that gives you the option to either run part 1 or part 2. Clicking these options changes the screen displayed to the part picked. Each screen is built and formatted with XML where each feature (button, text, touch, etc.) is attached to an action commands and gets run when clicked/touched.
 
-The design for part 1 is built through a simple EditText XML tag that allows modification by the user. Then the "Change Color" button calls on an action to grab the EditText tag to change the color to a random value.
+The design for part 1 is built through simple EditText and Button XML tags that allow modification and clicks by the user. The EditText tag has the text "Tap to Change Color" originally inputted but allows modification of the text by the user as well. Then the "Change Color" button calls on an action to grab the EditText tag to change the color to a random value. This random color is found through a random number generator that recieves random values for all the RGB values. This value is then converted to hex for the HTML color code which is displayed on the screen as the new color (below the button).
 
-The design for part 2 is built as a PaintView class extending view. This allows the class to have the basic functionality of touch movements and actions. The paint and path objects are also used to keep track of paths created through touch with the specified paint attributes. These are both created as ArrayLists to implement the changing of color functionality. The changing of color is implemented through RGB values given by the user. The saving of the canvas was implemented through the retrieval of the drawing cache and then compressed and saved to the camera folder.
+The design for part 2 is built as a PaintView class which extends view. This allows the class to have the basic functionality of touch movements and actions. The paint and path objects are used to keep track of paths created through touch with the specified paint attributes. These are both created as ArrayLists to implement the changing of color functionality. The changing of color is implemented through RGB values given by the user. These RGB values are recieved as values that the user inputs from the top right of the screen in part 2. Once the colors are picked, the Android color is created given the RGB values and then the change color method is called. The clearing of the canvas was implemented by replacing the screen with a fresh canvas. The saving of the canvas was implemented through the retrieval of the drawing cache and then compressing that bitmap and saved to the camera folder (to save, you must give permission for the app to access your gallery under settings).
